@@ -2,6 +2,8 @@
   "name": "d3.chart.circle-chart",
   "version": "0.0.0",
   "dependencies": {
-    "d3": "~3.3.4"
+    "d3": "~3.3.4",
+    "bootstrap": "~3.0.0",
+    "jquery": "~2.0.3"
   }
 }
