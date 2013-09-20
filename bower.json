@@ -1,0 +1,7 @@
+{
+  "name": "d3.chart.circle-chart",
+  "version": "0.0.0",
+  "dependencies": {
+    "d3": "~3.3.4"
+  }
+}
