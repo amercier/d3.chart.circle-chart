@@ -18,21 +18,21 @@
       .append('svg')
       .chart('Circles')
       .width(200)
-      .height(50)
-      .radius(10)
+      .height(10)
+      .radius(5)
       .color('#2fa0ec');
 
     chart.draw(data);
   })();
 
-  // (function() {
-  //   var data = [1,3,4,6,10];
+  (function() {
+    var data = [1,3,4,6,10];
 
-  //   var chart = d3.select('.chart-example-basic .chart-data')
-  //     .append('svg')
-  //     .chart('Circles');
+    var chart = d3.select('.chart-example-default .chart-data')
+      .append('svg')
+      .chart('Circles');
 
-  //   chart.draw(data);
-  // })();
+    chart.draw(data);
+  })();
 
 }());

@@ -13,13 +13,11 @@ d3.chart('Circles', {
     this.xScale = d3.scale.linear();
 
     this.base
-      .attr('height', '100%')
-      .attr('width', '100%');
-
-    var circlesBase = this.base.append('g')
-        .classed('circles', true)
         .attr('height', this.__height)
         .attr('width', this.__width);
+
+    var circlesBase = this.base.append('g')
+        .classed('circles', true);
 
     this.layer('circles', circlesBase, {
 
@@ -70,6 +68,7 @@ d3.chart('Circles', {
       return this.__width;
     }
     this.__width = newWidth;
+    this.base.attr('width', this.__width);
     return this;
   },
 
@@ -81,6 +80,7 @@ d3.chart('Circles', {
       return this.__height;
     }
     this.__height = newHeight;
+    this.base.attr('height', this.__height);
     return this;
   },
 

@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.css" />
     <link rel="stylesheet" href="docs.css" />
+    <style>
+.chart-example {
+  margin: 5em 0;
+}
+
+.chart-data {
+  margin: 3em 0;
+}
+    </style>
 	</head>
 	<body>
 
@@ -19,6 +28,7 @@
             <ul class="nav doc-sidenav">
               <li>
                 <a href="#example-full">Full-featured example</a>
+                <a href="#example-default">Default settings</a>
               </li>
             </ul>
           </div>
@@ -46,12 +56,12 @@ chart.draw(data);
           </div>
 
           <!-- Basic example -->
-          <div id="example-basic" class="doc-container chart-example chart-example-basic">
-            <h2>Full-featured example</h2>
+          <div id="example-default" class="doc-container chart-example chart-example-default">
+            <h2>Default settings</h2>
             <pre>
 var data = [1,3,4,6,10];
 
-var chart = d3.select('.chart-example-basic .chart-data')
+var chart = d3.select('.chart-example-default .chart-data')
   .append('svg')
   .chart('Circles');
 
